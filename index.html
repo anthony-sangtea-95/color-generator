@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Gradient Color Generator Using Javascript</title>
+</head>
+<body>
+    <div class="wrapper mx-auto shadow">
+            <div class="gradient-box" id="gradient-box">
+            
+            </div>
+            <div class="direction">
+                <p class="form-label">Direction</p>
+                <select name="select-dir" id="" class="form-select">
+                    <option value="to top">to top</option>
+                    <option value="to right top">to right top</option>
+                    <option value="to right">to right</option>
+                    <option value="to right bottom">to right bottom</option>
+                    <option value="to bottom">to bottom</option>
+                    <option value="to left bottom">to left bottom</option>
+                    <option value="to left">to left</option>
+                    <option value="to left top" selected>to left top</option>
+                </select>
+            </div>
+            <div class="color">
+                <p class="form-label">
+                    Colors
+                </p>
+                <div class="color-inputs">
+                    <input type="color" name="color_1" id="" class="form-control-color" value="#fff007">
+                    <input type="color" name="color_2" id="" class="form-control-color" value="#f08ff6">
+                </div>
+            </div>
+            <div class="linear-color p-3 fw-light">
+                background: linear-gradient(to left top, #fff007,#f08ff6);
+            </div>
+            <div class="refresh-color mt-3">
+                <button class="btn btn-secondary refresh-btn w-100 py-2">
+                    Refresh Color
+                </button>
+            </div>
+            <div class="copy-code mt-3">
+                <button class="btn btn-primary copy-btn w-100 py-2">
+                    Copy Code
+                </button>
+            </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
